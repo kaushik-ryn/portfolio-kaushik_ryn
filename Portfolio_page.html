@@ -12,6 +12,9 @@
         <title>Portfolio website complete</title>
     </head>
     <body>
+
+
+        <div class="main">
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
@@ -215,42 +218,45 @@
 
             <section>
 
-            <div style="display: flex
-            ;
+            <div class="fixframe" style="display: flex;
                 align-content: center;
                 width: 98vw;
-                justify-content: center; gap:25px;">
-                <h2 class="skills__subtitle" style="font-style: underline; color: rgb(93, 92, 92); justify-content: center; align-items: center;"  >Frameworks</h2>
-                <p class="skills__text"></p>
-                <div class="skills__data" style=" background-color: #e0d7d7; padding: 20px 25px 20px 19px;">
+                justify-content: center; gap:25px; max-width: 100%">
+              
+              <h2 class="skills__subtitle" style="font-style: underline; color: rgb(93, 92, 92); justify-content: center; align-items: center;"  >Frameworks</h2>
+              <div class="framecontain" style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 20px;">
+              <div class="skills__data" style=" background-color: #e0d7d7; padding: 20px 25px 20px 19px;">
                     <div class="skills__names">
                         <i class='bx bxl-html5 skills__icon'></i>
                         <span class="skills__name " style="text-align: center; ">React JS</span>
                     </div>
                 </div>
-                <div class="skills__data" style="background-color: #e0d7d7; padding: 0px 25px 0px 19px;">
+                <div class="skills__data" style="background-color: #e0d7d7; padding: 20px 25px 20px 19px;">
                     <div class="skills__names">
                         <i class='bx bxl-css3 skills__icon'></i>
                         <span class="skills__name">Tailwind</span>
                     </div>
 
                 </div>
-                <div class="skills__data" style="background-color: #e0d7d7; padding: 0px 25px 0px 19px;">
+                <div class="skills__data" style="background-color: #e0d7d7; padding: 20px 25px 20px 19px;">
                     <div class="skills__names">
                         <i class='bx bxl-javascript skills__icon' ></i>
                         <span class="skills__name">Express JS</span>
                     </div>
 
                 </div>
+              </div>
             </div>
+            <br>
             
-            <div style="display: flex
-            ;
+            <div class="fixtechno" style="display: flex;
                 align-content: center;
                 width: 98vw;
-                justify-content: center; gap:25px;">
+                justify-content: center; gap:25px; max-width: 100%;">
+
+               
                 <h2 class="skills__subtitle" style="font-style: underline; color: rgb(93, 92, 92);"  >Technologies</h2>
-                <p class="skills__text"></p>
+                <div class="techno" style="display: flex; align-content: center; justify-content: center; gap:25px;">
                 <div class="skills__data" style=" background-color: #e0d7d7; padding: 20px 25px 20px 19px;">
                     <div class="skills__names">
                         <i class='bx bxl-html5 skills__icon'></i>
@@ -271,6 +277,7 @@
                     </div>
 
                 </div>
+                </div>
 
             </div>
 
@@ -282,9 +289,9 @@
             <section class="work section" id="projectbhai">
                 <h2 class="section-title">Projects</h2>
 
-                <div style="display: flex; gap: 50px; flex-direction: row; justify-content: center; align-items: center;" class="work__container bd-grid">
+                <div style="display: flex; gap: 50px; flex-direction: row; justify-content: center; align-items: center;" class="fix work__container bd-grid">
                
-                    <a style="width: 20vw; height: 25vh;  background-color: #c66060; color: white;" href="" class="work__img">
+                    <a style=" width:20vw; height: 25vh;  background-color: #c66060; color: white;" href="#" class="work__img">
                         <img style="    position: relative;
                         width: 127px;
                         top: 20px;"  src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="">
@@ -293,7 +300,7 @@
                          
                         </div>
                     </a>
-                    <a style="width: 20vw;  height: 25vh;" href="" class="work__img">
+                    <a style=" width: 20vw;  height: 25vh;" href="" class="work__img">
                         <img style="    position: relative;
                         width: 127px;
                         top: 20px;"  src="https://cdn-icons-png.flaticon.com/512/5837/5837040.png" alt="">
@@ -302,12 +309,16 @@
                          
                         </div>
                     </a>
-                    <a style="width: 20vw;  height: 25vh; background-color: #b1ada4; color: black;" href="" class="work__img">
+                    <a class="project"  style=" border-radius: 1cap; width: 20vw;  height: 25vh; background-color: #b1ada4; color: black;" href="#" class="work__img">
                         <img style="    position: relative;
                         width: 127px;
                         top: 20px;" src="https://freepngdesign.com/content/uploads/images/music-player-8054.png" alt="">
                         <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;" class="work__layer">
-                            <h3 class="work__title">Music Player</h3>
+
+                            <h3 class="work__title" style="position: relative; top: -10px;" >
+                                Music Player
+                               <h5 style="position: relative; top: -42px; font-style: italic;"> ~Project is Underworking~ </h5>
+                                </h3>
                          
                         </div>
                     </a>
@@ -348,8 +359,8 @@
         </main>
 
         <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >Social Media & Coding PLatform</p>
+        <footer class="footer" style="max-width: 100%;">
+            <p class="footer__title" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; " >Social Media & Coding PLatform</p>
             <div class="footer__social">
                 <a href="https://www.geeksforgeeks.org/user/kaushik_ry/" class="footer__icon"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/2560px-GeeksforGeeks.svg.png" alt=""><i class='bx bxl-facebook' style="font-size: large;" >GeeksForGeeks</i></a>
                 <a href="https://leetcode.com/u/kaushik_ry/" class="footer__icon"><img class="img1" src="https://cdn.iconscout.com/icon/free/png-256/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-vol-1-pack-logos-icons-3030025.png" alt=""><i class='bx bxl-instagram' style="font-size: large;" >LeetCode</i></a>
@@ -365,6 +376,8 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
+
+        </div>
         <script src="Portfolio_page.js"></script>
     </body>
 </html>
