@@ -407,6 +407,8 @@ img {
     left: 140px;
   }
 }
+
+
 @media screen and (max-width: 325px) {
   .home {
     row-gap: 2rem;
@@ -415,8 +417,8 @@ img {
     width: 200px;
   }
   .home__data{
-    height: 60vh;
-    width: 159vw;
+    height: 69vh;
+    width: 134vw;
     position: relative;
     left: 13px;
   }
